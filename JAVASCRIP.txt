@@ -1,0 +1,473 @@
+
+
+ CONCATENACION : 
+JAVACRIP : 
+
+COMILLAS SIMPLES : 
+COMILLAS DOBLES :
+
+
+nombre = `Angie`
+/**Backtips**/
+frase = `soy ${nombre} una "estudiante"`;
+
+document.write(frase); 
+
+oPERADORES (INTERMEDIO)
+OPERADORES LOGICOS = Se
+OPERADORES DE COMPARACION = comparan dos expresiones y devulevn un valor 
+Boolean que representa la relacion de sus valores  . 
+devuelven TRUE O FALSE .
+
+
+el igual = asigna no compara 
+
+(a ! = b) = DESIGUALDAD = de esta forma preguntamos si lso valores sean distintos . 
+
+
+COMPARACION ES == Y NOS MUESTRA SI ES TRUE O FALSE  NO DIFERENCIA EL TIPO DE DATOS 
+(a==b) SI ES QUE SON IGUALES 
+
+( A ===B  ) = identicposa este compara que sean estrictamente iguales .  LO MISMO Y MISMO DATO Y ADEMAS EL MISMO VALOR 
+
+mayor e igual que ><
+
+OPERADORES LOGICOS : Son los que nos devuelven un resultado a partir 
+qde que se cumplan (o no ) una CONDICION  , su resultado es booleano ,
+y sus operandos son valores logicos o asimilables a ellos  .
+
+&& = solo acepta valores booleanos (TRUE Y FALSE) and
+ Solo es true si ambos operandos son true. Si uno es false, el resultado es false.
+
+nume1 = 15;
+nume2 = 25;
+
+afirmacion = nume1 > nume2;
+afirmacion2 = nume1 != nume2;
+document.write(afirmacion && afirmacion2);
+
+
+
+Operador OR (||)
+El operador || devuelve true si al menos uno de los operandos es true.
+Solo devolverá false si ambos operandos son false.
+
+ document.write(afirmacion ||  afirmacion2);
+
+Negación (!)
+Si tienes un valor true, al usar ! se convertirá en false.
+Si tienes un valor false, al usar ! se convertirá en true.
+Solo funciona con valores Booleanos
+document.write(!true);
+
+COMBINACION DE OPERADORES : 
+document.write (nume1 < nume2 || nume1 ==nume2);
+
+
+num1 = 12;
+num2 = 24;
+num3 = 25;
+num4 = 92;
+num5 = 91;
+
+op = ( num5 > num2 && num4 > num3) || (!(num1 === num2) || num3 != num3)
+op = true
+document.write(op)
+
+
+CAMEL CASE :  La primera palabra va en  minuscula luego 
+al principio va en mayuscula(Buenas practicas ) 
+ejemeplo : let edadPersona = 30; 
+
+
+
+Condicionales : 
+if: Se puede usar una vez o varias, pero solo
+ se ejecutará el primer bloque verdadero.
+else if: Puedes usarlo tantas veces como quieras,
+ permitiendo múltiples condiciones.
+else: Solo se puede usar una vez y debe ir al final.
+
+
+
+
+nombre = "Susana"
+if (nombre =="ANGIE"){
+    alert( `tu nombre es  ${nombre}` );
+}
+else if (
+    nombre == "nayeli"){
+ alert("tu nombre es " + nombre);
+    }
+    else {
+        alert("Tu nombre es otro");
+    }
+
+
+se termino el primer capituloo 
+TOCA PRACTICA :v Y TENEMOS QUE RESOLVER PROBLEMAS 
+pimche cofla  xd . 
+
+EL PROBLEMA = DE COFLA
+
+SOLUCION =
+Ingresa el monto a mostrar  ( El mas caro ) 
+Si hay 2   o mas mostrar con el mismo precio mostrar ambos
+Indicar vuelto .
+
+EL PROBLEMA = DEL LIMOSNERO 
+
+Si le alcanza uno , lo compra . 
+Si le alcanza dos , compra dos 
+Si le alcanza tres y sobra regala el vuelto . 
+Debe mostrar que compro y el vuelto 
+
+EL PROBLEMA DE COFLA POR PEgar al quiosquero  . 
+
+-Si miente le da una descarga 
+-Si  no miente no hace nada 
+-si el aparato no se decide acalrar que la pregunta debe ser mas clara .
+
+
+/*/*/*/*/*/
+
+LOS ARREGLOS (ARRAYS) :Son contenedores que pueden almacenar diversos tipos de elementos,
+ como números, cadenas, objetos, etc.  Los arrays son objetos en JavaScript, y sus 
+datos empiezan a contarse desde el índice 0.
+
+let frutas = [ "manzana" , "pera", "fresa"];
+
+¿Cómo mostrar un elemento específico del array?
+document.write(frutas[2]);  // Esto mostrará "fresa" porque está en la posición 2 del array.
+
+ Nota:
+ En los arrays normales, los elementos se acceden por sus posiciones
+ (índices numéricos), no por sus nombres.
+
+
+cuando se arranca el array todas las posiciones ya estan declaradas
+En los arrays, los elementos se acceden por sus posiciones, no por sus nombres.
+
+ARRAYS ASOCIATIVOS :  (Objetos en JavaScript):
+
+Definición: 
+Los arrays asociativos permiten acceder a los elementos mediante una clave en 
+lugar de un índice numérico. En JavaScript, los arrays asociativos se
+manejan con objetos, donde cada elemento tiene una clave única.
+
+Ejemplo:
+
+
+let nombre = [ "pc_Angie"];
+let procesador = ["Intel core i7"];
+let ram = ["16gb"];
+let espacio = ["1TB"];
+
+let frase = `El nombre de mi pc es : <b> ${nombre}</b> <br>
+         El procesaro es :<b> ${procesador} </b> <br>
+         La memoria  ram es de :<b>  ${ram}</b> <br>
+         El espacio es de  :<b> ${espacio}</b> ` ;
+
+         document.write(frase);
+ Nota
+ En los arrays asociativos (objetos), los elementos se acceden por su 
+nombre (clave) en lugar de por un índice.
+
+
+
+// BUCLES E ITERACIÓN:
+
+ Definición:
+ Un bucle es una estructura repetitiva que se utiliza
+ para ejecutar una misma sección de código varias veces, 
+ dependiendo de una condición. El bucle continuará 
+ejecutándose mientras la condición sea verdadera.
+
+
+ WHILE:
+ El bucle `while` evalúa la condición al principio. Si la condición es verdadera, 
+el bucle se ejecuta, de lo contrario no entrará en el bucle. 
+Este tipo de bucle se utiliza cuando no sabemos cuántas veces se repetirá el ciclo.
+
+let numero = 0;
+while (numero < 10) {
+  numero++; // Incrementa el número en 1
+  document.write("Estoy en la vuelta número " + numero + "<br>");
+}
+
+ EXPLICACION = Una vez que `numero` alcanza 10, el bucle termina.
+
+do WHILE (HACER MIENTRAS) =  // DO-WHILE:
+ El bucle `do-while` garantiza que el bloque de código 
+se ejecute al menos una vez,porque la condición se evalúa
+ al final. Es decir, primero ejecuta el código y 
+luego valida si sigue o no.
+
+let numero2 = 15;
+do {
+    document.write( " Estoy en la vuelta numero " +numero2 +"<br>" ) //Lode  la parentesis es concatenacion para que la frase este en uno solo
+      numero2++;// Incrementa el número en 1
+}
+while(numero2 <= 10)
+
+ EXPLICACION =El resultado es que solo se ejecuta una vez la frase con 
+el número 15, porque la condición no se cumple después.
+
+    }
+
+////////////////////////////////
+
+CICLO FOR  :  Se usa para ejecutar un bloque de código un número
+ específico de veces. Se puede controlar el inicio, la condición para
+ continuar, y cómo se actualiza la variable en cada iteración.
+
+
+for (let i = 0; i < 6; i++) { // i++ Imprime empzando del 0
+    document.write(i + "<br>");
+}
+
+Explicación: Este ciclo for inicia con i = 0, se repite mientras i < 6 y, 
+en cada iteración, aumenta i en 1 (por i++). Imprime los números del 0 al 5.
+
+
+for (let i = 6; i > 0; --i) { // --i Imprime empezando del 1
+    document.write(i + "<br>");
+}
+Explicación: Aquí, el ciclo comienza en i = 6 y se repite mientras i > 0,
+ restando 1 en cada iteración (por --i). Imprime los números del 6 al 1.
+
+
+for (let i = 0; i < 6; ++i) { // ++i Imprime 0 a 5
+    document.write(i + "<br>");
+}
+Explicación: Funciona igual que el primer ciclo. La diferencia 
+entre i++ y ++i es cuándo se incrementa la variable, pero en este 
+caso, el comportamiento es el mismo porque se usa después de la comparación.
+
+
+
+CICLO  FOR CON BREAK : 
+BREAK: Detiene completamente la ejecución del ciclo, 
+sin continuar a la siguiente iteración.
+
+
+
+for (let i = 0; i < 6; ++i) { // ++i Imprime 1
+    document.write(i + "<br>");
+    if (i == 10) {
+        break;
+    }
+}
+Explicación: Aunque el ciclo está configurado para ejecutarse mientras i < 6, 
+tiene una condición if que rompe el ciclo si i == 10. Sin embargo, como i nunca 
+llega a 10 (porque el límite es 6), el break nunca se ejecuta.
+
+
+
+3. Iterar sobre un array con for
+
+
+let frutas2 = ["manzana", "pera", "fresa"];
+for (let i = 0; i < frutas2.length; i++) {
+    if (frutas2[i] == "manzana") {  // Salta "manzana"
+        continue;
+    }
+    document.write("La fruta es: " + frutas2[i] + "<br>");
+}
+Explicación: En este ciclo, se itera sobre un array de frutas.
+ Si la fruta es "manzana", se ejecuta el continue, lo que salta 
+esa iteración y no imprime "manzana". Imprime solo "pera" y "fresa".
+
+
+4. CICLOS for in y for of   ****************************
+
+//FOR IN: Recorre las propiedades o índices de un objeto o array.
+
+let animales = ["gato", "perro", "conejo"];
+
+for (animal in animales) {
+    document.write(animal + "<br>"); // Imprime las posiciones: 0, 1, 2
+}
+
+//FOR OF: Recorre los valores de un objeto iterable, como arrays o cadenas.
+
+for (animal of animales) {
+    document.write(animal + "<br>"); // Imprime los valores de la posicion: gato, perro, conejo
+}
+
+/*/*/*/*/*/
+
+
+5-LABEL =sentencia que permite asociar un bucle a un nombre para poder terminarlo 
+cuamndo queramos . 
+
+recoer un bucle dentro de un bucle con for 
+
+
+let alumnos1 =
+let alumnos2
+
+for(let i =0; i<5; i++);
+
+
+
+
+6-BUCLES ANINADADOS : Bucles dentro de Bucles
+
+Ejemplo: Recorrer una matriz con bucles anidados
+
+
+//matriz con 3 arrays
+//el bucle solo recorre la fila actual.
+const miArray = [
+    [1,2,3], // Primera fila (miArray[0])
+    [4,5,6], // 3 subarray(FILAS)con tres números:
+    [7,8,9] // 
+]; 
+
+//  index = SOLO CAMBIA EL número de la fila      
+//x++ es lo que hace que el segundo bucle avance de un elemento al siguiente dentro de la misma fila
+for (let index = 0; index < miArray.length; index++) {
+    let fila = miArray[index]; // Guardala fila actual (subarray)
+    document.write(" Fila " + index + " : ") ;
+
+    // let x = 0; → Aquí es donde se recorren los elementos dentro de la fila.
+    for (let x = 0; x < fila.length; x++) {
+        document.write(fila[x], "") ;
+        
+    }
+}
+
+
+
+
+/*/*/*      LENGTH    /*/*/*  
+
+¿Cómo trabaja .length en los bucles?
+
+En el bucle externo, miArray.length asegura que recorra todas las filas.
+En el bucle interno, fila.length asegura que recorra todos los
+ elementos dentro de la fila actual.
+
+Recapitulando:
+El bucle externo recorre las filas de la matriz.
+El bucle interno recorre los elementos dentro de cada fila.
+index se usa para recorrer las filas de miArray.
+index++ avanza de fila en fila.
+x++ avanza de un elemento al siguiente dentro de la fila.
+.length asegura que el bucle recorra automáticamente todo el array sin tener que especificar un número fijo.
+miArray.length asegura que el bucle recorra todas las filas, desde 0 hasta el último índice.
+Segundo bucle (x):
+
+------------------------------
+
+- Sentencia label  = 
+- Sentencia continue   =
+
+let alumnos1 = ["maria", "susana", "pablo"];
+let alumnos2 = ["roger", "rachell", alumnos1, "rachelpp"];
+
+
+for (let alumnos in alumnos2) {
+    if (alumnos == 2) {
+
+
+        for (let alumnos of alumnos1) {
+            if (array == "rachell"){
+                continue;
+            }
+            document.write(alumnos + "<br>");
+            // break;
+        }
+    } else {
+        document.write(alumnos2[alumnos]+"<br>");
+
+    }
+}
+
+
+14) 
+Definicon  = se agarra todo una parte del codigo para poder
+reutilizarla . (OPTIMIZAR) 
+ usos = el poder reutilizarla y crear varias  funciones .  
+Formas de crear funciones (y llamarlas)
+Return = finaliza de terminar  la funcion 
+
+function saludar(){
+respuesta = prompt("Hola , como te fue tu dia");
+if respuesta == "bien")
+alert ("que bien xd");
+}else{
+alert("es una pena"); 
+}
+saludar();
+
+//creando una funcion
+function saludar(){
+    let respuesta = prompt("Hola , como te fue tu dia");
+    
+    if (respuesta =="bien"){
+     alert ("que bien xd");
+    }else{
+    // alert("es una pena"); 
+    return "ok";
+    }
+}
+//llamando
+saludar();
+
+Parametros
+Scope 
+Funciones Flecha
+
+
+
+15) FOR EACH 
+-Sintaxis y uso 
+-Ventajas respecto a for 
+-Desventajas (Break , Continue ) 
+
+
+
+
+// Creando una función
+function saludar() {
+    // Declarar la variable con 'let'
+    let respuesta = prompt("Hola, ¿cómo te fue tu día?");
+
+    // Verificar si se ingresó una respuesta
+    if (respuesta) {
+        // Comparar ignorando mayúsculas y minúsculas
+        if (respuesta.toLowerCase() === "bien") {
+            alert("¡Qué bien! XD");
+        } else {
+            alert("Es una pena.");
+        }
+    } else {
+        alert("No ingresaste ninguna respuesta.");
+    }
+}
+
+// Llamando a la función
+saludar();
+
+
+
+back nest 
+
+/** funciones flecha */* 
+optimiza el codigo 
+ademas si tiene un solo parametro no usa parentesis .
+ademas no utiliza la palabra reservada FUNCTION
+
+
+const suma = (num1 , num2) =>{
+    let resultado  = num1 + num2;
+    alert(`"La suma es:" ${resultado}`);
+ }
+
+
+
+
+
+
